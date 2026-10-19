@@ -15,7 +15,7 @@ function buildDefaultProviders(): LLMProvider[] {
       priority: 2,
       baseURL: "https://api.groq.com/openai/v1",
       apiKey: process.env.GROQ_API_KEY,
-      defaultModel: "llama-3.3-70b-versatile",
+      defaultModel: "qwen/qwen3.8-27b",
     }),
     createOpenAICompatProvider({
       name: "openrouter",

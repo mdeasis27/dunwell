@@ -1,0 +1,608 @@
+[
+  {
+    "today": "2026-10-14",
+    "invoices": [
+      {
+        "id": "d-4",
+        "client": "Client d-4",
+        "amount_cents": 100000,
+        "due": "2026-10-18",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d-3",
+        "client": "Client d-3",
+        "amount_cents": 100000,
+        "due": "2026-10-17",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d-1",
+        "client": "Client d-1",
+        "amount_cents": 100000,
+        "due": "2026-10-15",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d0",
+        "client": "Client d0",
+        "amount_cents": 100000,
+        "due": "2026-10-14",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d1",
+        "client": "Client d1",
+        "amount_cents": 100000,
+        "due": "2026-10-13",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d6",
+        "client": "Client d6",
+        "amount_cents": 100000,
+        "due": "2026-10-08",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d7",
+        "client": "Client d7",
+        "amount_cents": 100000,
+        "due": "2026-10-07",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d20",
+        "client": "Client d20",
+        "amount_cents": 100000,
+        "due": "2026-09-24",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d21",
+        "client": "Client d21",
+        "amount_cents": 100000,
+        "due": "2026-09-23",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d44",
+        "client": "Client d44",
+        "amount_cents": 100000,
+        "due": "2026-08-31",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "d45",
+        "client": "Client d45",
+        "amount_cents": 100000,
+        "due": "2026-08-30",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      }
+    ],
+    "expected": {
+      "d-4": "none",
+      "d-3": "heads_up",
+      "d-1": "heads_up",
+      "d0": "none",
+      "d1": "friendly",
+      "d6": "friendly",
+      "d7": "firm",
+      "d20": "firm",
+      "d21": "final",
+      "d44": "final",
+      "d45": "escalate"
+    }
+  },
+  {
+    "today": "2026-10-14",
+    "invoices": [
+      {
+        "id": "p-99pct",
+        "client": "Client p-99pct",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 99000,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "p-just-over",
+        "client": "Client p-just-over",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 98999,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "p-full",
+        "client": "Client p-full",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 100000,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "p-over",
+        "client": "Client p-over",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 120000,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "p-hold-nearly",
+        "client": "Client p-hold-nearly",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 99500,
+        "last_reminder": null,
+        "hold": true
+      },
+      {
+        "id": "p-hold",
+        "client": "Client p-hold",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": true
+      },
+      {
+        "id": "p-odd",
+        "client": "Client p-odd",
+        "amount_cents": 12345,
+        "due": "2026-10-04",
+        "paid_cents": 12222,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "p-odd2",
+        "client": "Client p-odd2",
+        "amount_cents": 12345,
+        "due": "2026-10-04",
+        "paid_cents": 12221,
+        "last_reminder": null,
+        "hold": false
+      }
+    ],
+    "expected": {
+      "p-99pct": "none",
+      "p-just-over": "firm",
+      "p-full": "none",
+      "p-over": "none",
+      "p-hold-nearly": "none",
+      "p-hold": "hold",
+      "p-odd": "none",
+      "p-odd2": "firm"
+    }
+  },
+  {
+    "today": "2026-10-17",
+    "invoices": [
+      {
+        "id": "sat-firm",
+        "client": "Client sat-firm",
+        "amount_cents": 100000,
+        "due": "2026-10-07",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "sat-hold",
+        "client": "Client sat-hold",
+        "amount_cents": 100000,
+        "due": "2026-10-07",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": true
+      },
+      {
+        "id": "sat-paid",
+        "client": "Client sat-paid",
+        "amount_cents": 100000,
+        "due": "2026-10-07",
+        "paid_cents": 100000,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "sat-heads",
+        "client": "Client sat-heads",
+        "amount_cents": 100000,
+        "due": "2026-10-19",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      }
+    ],
+    "expected": {
+      "sat-firm": "none",
+      "sat-hold": "hold",
+      "sat-paid": "none",
+      "sat-heads": "none"
+    }
+  },
+  {
+    "today": "2026-10-18",
+    "invoices": [
+      {
+        "id": "sun-esc",
+        "client": "Client sun-esc",
+        "amount_cents": 100000,
+        "due": "2026-08-19",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "sun-hold",
+        "client": "Client sun-hold",
+        "amount_cents": 100000,
+        "due": "2026-10-15",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": true
+      },
+      {
+        "id": "sun-friendly",
+        "client": "Client sun-friendly",
+        "amount_cents": 100000,
+        "due": "2026-10-15",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      }
+    ],
+    "expected": {
+      "sun-esc": "none",
+      "sun-hold": "hold",
+      "sun-friendly": "none"
+    }
+  },
+  {
+    "today": "2026-10-14",
+    "invoices": [
+      {
+        "id": "hu-null",
+        "client": "Client hu-null",
+        "amount_cents": 100000,
+        "due": "2026-10-16",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "hu-prior-hu",
+        "client": "Client hu-prior-hu",
+        "amount_cents": 100000,
+        "due": "2026-10-16",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "heads_up",
+          "date": "2026-10-09"
+        },
+        "hold": false
+      },
+      {
+        "id": "hu-prior-hu-old",
+        "client": "Client hu-prior-hu-old",
+        "amount_cents": 100000,
+        "due": "2026-10-16",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "heads_up",
+          "date": "2026-09-14"
+        },
+        "hold": false
+      },
+      {
+        "id": "hu-prior-friendly",
+        "client": "Client hu-prior-friendly",
+        "amount_cents": 100000,
+        "due": "2026-10-15",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "friendly",
+          "date": "2026-09-04"
+        },
+        "hold": false
+      },
+      {
+        "id": "fr-after-hu",
+        "client": "Client fr-after-hu",
+        "amount_cents": 100000,
+        "due": "2026-10-11",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "heads_up",
+          "date": "2026-10-09"
+        },
+        "hold": false
+      }
+    ],
+    "expected": {
+      "hu-null": "heads_up",
+      "hu-prior-hu": "none",
+      "hu-prior-hu-old": "none",
+      "hu-prior-friendly": "none",
+      "fr-after-hu": "friendly"
+    }
+  },
+  {
+    "today": "2026-10-14",
+    "invoices": [
+      {
+        "id": "back-final-to-firm",
+        "client": "Client back-final-to-firm",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "final",
+          "date": "2026-10-05"
+        },
+        "hold": false
+      },
+      {
+        "id": "back-esc-to-final",
+        "client": "Client back-esc-to-final",
+        "amount_cents": 100000,
+        "due": "2026-09-14",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "escalate",
+          "date": "2026-09-24"
+        },
+        "hold": false
+      },
+      {
+        "id": "back-firm-to-friendly",
+        "client": "Client back-firm-to-friendly",
+        "amount_cents": 100000,
+        "due": "2026-10-10",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-04"
+        },
+        "hold": false
+      },
+      {
+        "id": "up-friendly-to-firm",
+        "client": "Client up-friendly-to-firm",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "friendly",
+          "date": "2026-10-11"
+        },
+        "hold": false
+      },
+      {
+        "id": "up-firm-to-esc",
+        "client": "Client up-firm-to-esc",
+        "amount_cents": 100000,
+        "due": "2026-08-25",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-13"
+        },
+        "hold": false
+      }
+    ],
+    "expected": {
+      "back-final-to-firm": "none",
+      "back-esc-to-final": "none",
+      "back-firm-to-friendly": "none",
+      "up-friendly-to-firm": "firm",
+      "up-firm-to-esc": "escalate"
+    }
+  },
+  {
+    "today": "2026-10-14",
+    "invoices": [
+      {
+        "id": "rep-6",
+        "client": "Client rep-6",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-08"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-7",
+        "client": "Client rep-7",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-07"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-8",
+        "client": "Client rep-8",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-06"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-0",
+        "client": "Client rep-0",
+        "amount_cents": 100000,
+        "due": "2026-10-04",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-14"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-final-6",
+        "client": "Client rep-final-6",
+        "amount_cents": 100000,
+        "due": "2026-09-14",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "final",
+          "date": "2026-10-08"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-final-7",
+        "client": "Client rep-final-7",
+        "amount_cents": 100000,
+        "due": "2026-09-14",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "final",
+          "date": "2026-10-07"
+        },
+        "hold": false
+      },
+      {
+        "id": "rep-esc-7",
+        "client": "Client rep-esc-7",
+        "amount_cents": 100000,
+        "due": "2026-08-05",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "escalate",
+          "date": "2026-10-07"
+        },
+        "hold": false
+      }
+    ],
+    "expected": {
+      "rep-6": "none",
+      "rep-7": "firm",
+      "rep-8": "firm",
+      "rep-0": "none",
+      "rep-final-6": "none",
+      "rep-final-7": "final",
+      "rep-esc-7": "escalate"
+    }
+  },
+  {
+    "today": "2026-10-15",
+    "invoices": [
+      {
+        "id": "m1",
+        "client": "Client m1",
+        "amount_cents": 100000,
+        "due": "2026-10-13",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "heads_up",
+          "date": "2026-10-09"
+        },
+        "hold": false
+      },
+      {
+        "id": "m2",
+        "client": "Client m2",
+        "amount_cents": 100000,
+        "due": "2026-10-07",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "friendly",
+          "date": "2026-10-09"
+        },
+        "hold": false
+      },
+      {
+        "id": "m3",
+        "client": "Client m3",
+        "amount_cents": 100000,
+        "due": "2026-09-20",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "firm",
+          "date": "2026-10-03"
+        },
+        "hold": false
+      },
+      {
+        "id": "m4",
+        "client": "Client m4",
+        "amount_cents": 100000,
+        "due": "2026-08-31",
+        "paid_cents": 0,
+        "last_reminder": {
+          "stage": "final",
+          "date": "2026-10-01"
+        },
+        "hold": false
+      },
+      {
+        "id": "m5",
+        "client": "Client m5",
+        "amount_cents": 100000,
+        "due": "2026-10-18",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": false
+      },
+      {
+        "id": "m6",
+        "client": "Client m6",
+        "amount_cents": 100000,
+        "due": "2026-10-15",
+        "paid_cents": 0,
+        "last_reminder": null,
+        "hold": true
+      }
+    ],
+    "expected": {
+      "m1": "friendly",
+      "m2": "firm",
+      "m3": "final",
+      "m4": "escalate",
+      "m5": "heads_up",
+      "m6": "hold"
+    }
+  }
+]

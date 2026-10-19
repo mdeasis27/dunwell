@@ -1,0 +1,161 @@
+[
+  {
+    "id": "INV-1001",
+    "client": "Marta Ortega Studio",
+    "amount_cents": 180000,
+    "due": "2026-10-10",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1002",
+    "client": "Lumen Coffee Roasters",
+    "amount_cents": 95000,
+    "due": "2026-10-16",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1003",
+    "client": "Pablo Reyes Architects",
+    "amount_cents": 240000,
+    "due": "2026-10-06",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "friendly",
+      "date": "2026-10-07"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1004",
+    "client": "Northwind Print Co.",
+    "amount_cents": 60000,
+    "due": "2026-09-29",
+    "paid_cents": 20000,
+    "last_reminder": {
+      "stage": "firm",
+      "date": "2026-10-06"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1005",
+    "client": "Sofia Haidar",
+    "amount_cents": 320000,
+    "due": "2026-09-14",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "firm",
+      "date": "2026-10-05"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1006",
+    "client": "Brightside Dental",
+    "amount_cents": 410000,
+    "due": "2026-08-25",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "final",
+      "date": "2026-10-02"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1007",
+    "client": "Tomas Vidal Photography",
+    "amount_cents": 75000,
+    "due": "2026-10-14",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1008",
+    "client": "Kite & Compass",
+    "amount_cents": 150000,
+    "due": "2026-10-02",
+    "paid_cents": 148500,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1009",
+    "client": "Marta Ortega Studio",
+    "amount_cents": 88000,
+    "due": "2026-10-11",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": true
+  },
+  {
+    "id": "INV-1010",
+    "client": "Lumen Coffee Roasters",
+    "amount_cents": 129900,
+    "due": "2026-09-22",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "firm",
+      "date": "2026-10-08"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1011",
+    "client": "Pablo Reyes Architects",
+    "amount_cents": 54000,
+    "due": "2026-10-24",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1012",
+    "client": "Northwind Print Co.",
+    "amount_cents": 275000,
+    "due": "2026-08-30",
+    "paid_cents": 100000,
+    "last_reminder": {
+      "stage": "escalate",
+      "date": "2026-10-07"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1013",
+    "client": "Sofia Haidar",
+    "amount_cents": 36000,
+    "due": "2026-10-13",
+    "paid_cents": 0,
+    "last_reminder": null,
+    "hold": false
+  },
+  {
+    "id": "INV-1014",
+    "client": "Brightside Dental",
+    "amount_cents": 110000,
+    "due": "2026-10-08",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "friendly",
+      "date": "2026-10-12"
+    },
+    "hold": false
+  },
+  {
+    "id": "INV-1015",
+    "client": "Tomas Vidal Photography",
+    "amount_cents": 199000,
+    "due": "2026-09-04",
+    "paid_cents": 0,
+    "last_reminder": {
+      "stage": "final",
+      "date": "2026-10-11"
+    },
+    "hold": false
+  }
+]

@@ -1,0 +1,50 @@
+/* Dunwell design tokens. Contrast ratios are verified by tests/design-contrast.test.ts and listed in DESIGN.md. */
+:root {
+  --paper: #faf6ef;
+  --surface: #ffffff;
+  --surface-sunk: #efe9dd;
+  --ink: #1f1b16;
+  --muted: #5c5348;
+  --line: #cfc5b4;
+  --accent: #8a3b12;
+  --on-accent: #ffffff;
+
+  --stage-heads_up: #2f5d8a;
+  --stage-heads_up-bg: #e6eef6;
+  --stage-friendly: #2e6b3f;
+  --stage-friendly-bg: #e5f1e8;
+  --stage-firm: #7a5600;
+  --stage-firm-bg: #f7ebcb;
+  --stage-final: #a13d12;
+  --stage-final-bg: #f9e3d8;
+  --stage-escalate: #8e1b2c;
+  --stage-escalate-bg: #f6dde0;
+  --stage-hold: #5c5348;
+  --stage-hold-bg: #e9e3d8;
+  --stage-none: #5c5348;
+  --stage-none-bg: #f1ece2;
+
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-atkinson), "Segoe UI", system-ui, sans-serif;
+
+  --step--1: 0.8rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5625rem;
+  --step-3: 1.953rem;
+  --step-4: 2.441rem;
+  --step-5: 3.052rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  --radius: 6px;
+  --target: 44px;
+  --focus-ring: 3px solid var(--accent);
+  --focus-offset: 2px;
+  --measure: 66ch;
+}
